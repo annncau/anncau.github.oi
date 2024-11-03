@@ -1,0 +1,74 @@
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+    
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Color de fondo claro */
+    color: #333;
+    padding: 20px;
+	
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #6200ea; /* Fondo morado oscuro */
+    color: white;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.featured-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    color: #6200ea;
+    margin-bottom: 10px;
+}
+
+article p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 10px;
+}

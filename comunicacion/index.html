@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Contaminación del Agua</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f0f2;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #003d5b;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 40px auto;
+            padding: 20px;
+            max-width: 1200px;
+        }
+
+        .feature {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            width: 280px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .feature:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .icon video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            font-weight: 600;
+            font-size: 1.1em;
+            color: #003d5b;
+            margin: 10px 0;
+        }
+
+        .Contenido {
+            font-weight: 400;
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #003d5b;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            margin-top: 20px;
+            box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsividad para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Contaminación del Agua</h1>
+    </header>
+
+    <div class="features">
+        <button class="feature" onclick="pagina1()">
+            <div class="icon">
+                <video src="videos/contaminacion.mp4" aria-label="Aguas residuales" onmouseover="this.play(); this.muted = true;" onmouseout="this.pause(); this.currentTime = 0;"></video>
+            </div>
+            <div class="description">Fuentes de Contaminación</div>
+            <div class="Contenido">Impacto de industrias, basura, y vertidos en el agua.</div>
+        </button>
+        <button class="feature" onclick="pagina2()">
+            <div class="icon">
+                <video src="videos/sequia.mp4" aria-label="Ecosistemas dañados" onmouseover="this.play(); this.muted = true;" onmouseout="this.pause(); this.currentTime = 0;"></video>
+            </div>
+            <div class="description">Impacto en Ecosistemas</div>
+            <div class="Contenido">Daños a la flora y fauna por contaminación acuática.</div>
+        </button>
+        <button class="feature" onclick="pagina3()">
+            <div class="icon">
+                <video src="videos/lluvia-toxica.mp4" aria-label="Salud humana" onmouseover="this.play(); this.muted = true;" onmouseout="this.pause(); this.currentTime = 0;"></video>
+            </div>
+            <div class="description">Efectos en la Salud</div>
+            <div class="Contenido">Enfermedades y problemas derivados de agua contaminada.</div>
+        </button>
+        <button class="feature" onclick="pagina4()">
+            <div class="icon">
+                <video src="videos/solucion-global.mp4" aria-label="Soluciones" onmouseover="this.play(); this.muted = true;" onmouseout="this.pause(); this.currentTime = 0;"></video>
+            </div>
+            <div class="description">Soluciones y Prevención</div>
+            <div class="Contenido">Medidas para reducir la contaminación del agua.</div>
+        </button>
+    </div>
+
+    <footer>
+        <p>© 2024 - Contaminación del Agua. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function pagina1() {
+            window.location.href = "sub/subindex1.html";
+        }
+
+        function pagina2() {
+            window.location.href = "sub/subindex2.html";
+        }
+
+        function pagina3() {
+            window.location.href = "sub/subindex3.html";
+        }
+
+        function pagina4() {
+            window.location.href = "sub/subindex4.html";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Conservación y Prevención del Agua</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: #0066cc;
+            color: #fff;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        /* Contenedor principal */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        /* Estilo de cada sección */
+        .section {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Imagen de la sección */
+        .section img {
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Contenido de la sección */
+        .content {
+            padding: 20px 30px;
+        }
+        .content h2 {
+            font-size: 24px;
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+        .content cite {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #888;
+            font-style: italic;
+            text-align: right;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0066cc;
+            color: #fff;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Conservación y Prevención de la Contaminación del Agua</h1>
+    </header>
+
+    <main class="container">
+        <!-- Sección 1: Reducir el Uso de Productos Químicos -->
+        <div class="section">
+            <img src="../img/reduccion-productos-quimicos.jpg" alt="Reducir el Uso de Productos Químicos">
+            <div class="content">
+                <h2>Reducir el Uso de Productos Químicos y Contaminantes</h2>
+                <p>La disminución del uso de fertilizantes y pesticidas evita la contaminación del agua. Las alternativas naturales y la reducción de plásticos ayudan a mantener las fuentes de agua limpias y libres de tóxicos.</p>
+                <cite>OMS, 2023</cite>
+            </div>
+        </div>
+
+        <!-- Sección 2: Regulaciones para la Industria y Agricultura -->
+        <div class="section">
+            <img src="../img/regulaciones-industria.jpg" alt="Regulaciones para la Industria y Agricultura">
+            <div class="content">
+                <h2>Regulaciones para la Industria y la Agricultura</h2>
+                <p>La industria y la agricultura son responsables de gran parte de la contaminación del agua. Las regulaciones y tecnologías de tratamiento de aguas residuales limitan los contaminantes que llegan a los cuerpos de agua.</p>
+                <cite>ONU, 2022</cite>
+            </div>
+        </div>
+
+        <!-- Sección 3: Incentivos para la Innovación en Sustentabilidad -->
+        <div class="section">
+            <img src="../img/innovacion-sustentabilidad.jpg" alt="Incentivos para la Innovación en Sustentabilidad">
+            <div class="content">
+                <h2>Incentivos para la Innovación en Sustentabilidad</h2>
+                <p>Promover la adopción de tecnologías limpias reduce la contaminación de las fuentes de agua. Las iniciativas de financiamiento ayudan a las empresas a implementar prácticas de reducción de contaminantes.</p>
+                <cite>UNICEF, 2024</cite>
+            </div>
+        </div>
+
+        <!-- Sección 4: Educación y Concientización Pública -->
+        <div class="section">
+            <img src="../img/educacion-publica.jpg" alt="Educación y Concientización Pública">
+            <div class="content">
+                <h2>Educación y Concientización Pública</h2>
+                <p>Fomentar la educación ambiental permite a las personas adoptar prácticas sostenibles en su vida diaria. Las campañas educativas ayudan a reducir el consumo de agua y promover la conservación.</p>
+                <cite>OMS, 2023</cite>
+            </div>
+        </div>
+
+        <!-- Sección 5: Infraestructura de Almacenamiento y Distribución -->
+        <div class="section">
+            <img src="../img/infraestructura-almacenamiento.png" alt="Infraestructura de Almacenamiento y Distribución">
+            <div class="content">
+                <h2>Infraestructura de Almacenamiento y Distribución Eficiente</h2>
+                <p>Optimizar la infraestructura de almacenamiento y distribución evita pérdidas de agua y maximiza su disponibilidad, asegurando que el recurso llegue a quienes lo necesitan sin desperdicio.</p>
+                <cite>OMS, 2024</cite>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 - Conservación y Prevención de la Contaminación del Agua</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Impacto de la Contaminación del Agua</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8eff5;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #4e9ed7, #2d3e50);
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 34px;
+            font-weight: 700;
+        }
+        
+        /* Contenedor */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 40px 5%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Estilo de las tarjetas */
+        .card {
+            position: relative;
+            background-color: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            text-align: center;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Imagen */
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            filter: brightness(0.9);
+            transition: filter 0.3s ease;
+        }
+        .card:hover img {
+            filter: brightness(0.7);
+        }
+
+        /* Contenido de la tarjeta */
+        .card-content {
+            padding: 20px;
+        }
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0 0 10px;
+            color: #2d3e50;
+        }
+        .card-description {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease, padding 0.5s ease;
+        }
+        .card.active .card-description {
+            max-height: 150px;
+            padding-top: 10px;
+        }
+
+        /* Estilo del icono */
+        .card-icon {
+            font-size: 40px;
+            color: #4e9ed7;
+            margin-top: -30px;
+        }
+        
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2d3e50;
+            color: #fff;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Impacto de la Contaminación del Agua</h1>
+    </header>
+
+    <section class="container">
+        <!-- Tarjeta 1 -->
+        <div class="card" onclick="toggleDescription(this)">
+            <img src="../img/eutrofizacion.jpg" alt="Eutrofización">
+            <div class="card-content">
+                <div class="card-icon">💧</div>
+                <h2 class="card-title">Eutrofización</h2>
+                <p class="card-description">La contaminación del agua puede provocar la proliferación de algas, reduciendo los niveles de oxígeno y creando "zonas muertas" sin vida. <cite>Organización Mundial de la Salud (OMS), 2023</cite></p>
+            </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="card" onclick="toggleDescription(this)">
+            <img src="../img/cadena-alimentaria.jpg" alt="Contaminación de la cadena alimentaria">
+            <div class="card-content">
+                <div class="card-icon">🦠</div>
+                <h2 class="card-title">Contaminación de la cadena alimentaria</h2>
+                <p class="card-description">Organismos pequeños como el zooplancton absorben metales pesados y microplásticos, afectando al ser humano. <cite>Organización Mundial de la Salud (OMS), 2022</cite></p>
+            </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="card" onclick="toggleDescription(this)">
+            <img src="../img/biodiversidad.jpg" alt="Pérdida de biodiversidad">
+            <div class="card-content">
+                <div class="card-icon">🌍</div>
+                <h2 class="card-title">Pérdida de biodiversidad</h2>
+                <p class="card-description">La contaminación del agua puede causar la extinción de diversas especies animales y vegetales. <cite>Fondo de las Naciones Unidas para la Infancia (UNICEF), 2021</cite></p>
+            </div>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="card" onclick="toggleDescription(this)">
+            <img src="../img/habitat.jpg" alt="Alteración de los hábitats acuáticos">
+            <div class="card-content">
+                <div class="card-icon">🌊</div>
+                <h2 class="card-title">Alteración de los hábitats acuáticos</h2>
+                <p class="card-description">La descarga de aguas residuales destruye hábitats acuáticos vitales para muchas especies. <cite>Organización Mundial de la Salud (OMS), 2024</cite></p>
+            </div>
+        </div>
+
+        <!-- Tarjeta 5 -->
+        <div class="card" onclick="toggleDescription(this)">
+            <img src="../img/disponibilidad-agua.jpg" alt="Reducción de la disponibilidad de agua">
+            <div class="card-content">
+                <div class="card-icon">🚰</div>
+                <h2 class="card-title">Reducción de la disponibilidad de agua</h2>
+                <p class="card-description">La contaminación de aguas superficiales y subterráneas reduce la disponibilidad de agua potable. <cite>Organización Mundial de la Salud (OMS), 2023</cite></p>
+            </div>
+        </div>
+
+        <!-- Tarjeta 6 -->
+        <div class="card" onclick="toggleDescription(this)">
+            <img src="../img/economia.jpg" alt="Pérdidas económicas">
+            <div class="card-content">
+                <div class="card-icon">💸</div>
+                <h2 class="card-title">Pérdidas económicas</h2>
+                <p class="card-description">La baja calidad del agua afecta actividades económicas como el turismo y la pesca. <cite>Fondo de las Naciones Unidas para la Infancia (UNICEF), 2024</cite></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 - Impacto de la Contaminación del Agua</p>
+    </footer>
+
+    <script>
+        function toggleDescription(element) {
+            element.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Efectos de la Contaminación del Agua en la Salud</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f8fb;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            color: #004c8c;
+        }
+        header h1 {
+            font-size: 32px;
+            margin: 0;
+        }
+
+        /* Contenedor principal */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        /* Estilo de cada tarjeta */
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Imagen de la tarjeta */
+        .card img {
+            width: 100%;
+            height: auto;
+            max-height: 180px;
+            object-fit: cover;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+
+        /* Contenido de la tarjeta */
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            font-size: 20px;
+            color: #004c8c;
+            margin-bottom: 10px;
+        }
+        .content p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #555;
+        }
+        .content cite {
+            display: block;
+            margin-top: 10px;
+            font-size: 13px;
+            color: #777;
+            font-style: italic;
+            text-align: right;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #004c8c;
+            color: #ffffff;
+            font-size: 14px;
+            width: 100%;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Efectos de la Contaminación del Agua en la Salud</h1>
+    </header>
+
+    <main class="container">
+        <!-- Enfermedades Diarreicas -->
+        <div class="card">
+            <img src="../img/enfermedades-diarreicas.jpg" alt="Enfermedades Diarreicas">
+            <div class="content">
+                <h2>Enfermedades Diarreicas</h2>
+                <p>El consumo de agua contaminada puede causar enfermedades diarreicas graves, que representan una de las principales causas de mortalidad infantil en regiones sin acceso a agua potable.</p>
+                <cite>OMS, 2023</cite>
+            </div>
+        </div>
+
+        <!-- Intoxicación por Metales Pesados -->
+        <div class="card">
+            <img src="../img/metales-pesados.jpg" alt="Intoxicación por Metales Pesados">
+            <div class="content">
+                <h2>Intoxicación por Metales Pesados</h2>
+                <p>La presencia de metales pesados como mercurio y plomo en el agua puede provocar daños neurológicos, afectaciones renales y problemas de desarrollo en los niños.</p>
+                <cite>ONU, 2022</cite>
+            </div>
+        </div>
+
+        <!-- Infecciones por Microorganismos -->
+        <div class="card">
+            <img src="../img/infecciones-microorganismos.jpg" alt="Infecciones por Microorganismos">
+            <div class="content">
+                <h2>Infecciones por Microorganismos</h2>
+                <p>El agua contaminada con bacterias, virus y parásitos es una fuente de infecciones que pueden provocar enfermedades graves como cólera, hepatitis A y fiebre tifoidea.</p>
+                <cite>OMS, 2023</cite>
+            </div>
+        </div>
+
+        <!-- Impacto en la Salud Mental -->
+        <div class="card">
+            <img src="../img/salud-mental.jpg" alt="Impacto en la Salud Mental">
+            <div class="content">
+                <h2>Impacto en la Salud Mental</h2>
+                <p>La preocupación por la disponibilidad de agua limpia y las consecuencias de la contaminación pueden aumentar el estrés y la ansiedad en comunidades afectadas.</p>
+                <cite>UNICEF, 2024</cite>
+            </div>
+        </div>
+
+        <!-- Efectos en el Desarrollo Infantil -->
+        <div class="card">
+            <img src="../img/desarrollo-infantil.jpg" alt="Efectos en el Desarrollo Infantil">
+            <div class="content">
+                <h2>Efectos en el Desarrollo Infantil</h2>
+                <p>La exposición prolongada a contaminantes en el agua puede afectar el crecimiento y desarrollo de los niños, generando problemas de aprendizaje y alteraciones físicas.</p>
+                <cite>OMS, 2024</cite>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 - Efectos de la Contaminación del Agua en la Salud</p>
+    </footer>
+</body>
+</html>
